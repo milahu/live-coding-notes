@@ -6,6 +6,12 @@ reloading pure functions with constant data layout is simple
 
 the hard part are changes in data layout (schema migrations)
 
+## criteria
+
+- "explicit" schema migrations or "implicit" schema migrations
+  - explicit: migrations are defined manually, user has full control over the migrations
+  - implicit: migrations are generated automatically, user has no control over the migrations, migrations can be wrong
+
 ## languages
 
 ### erlang
@@ -44,6 +50,20 @@ http://soft.vub.ac.be/Publications/2002/vub-prog-tr-02-25.pdf
 ### lively
 
 https://lively-next.org/
+
+### mun
+
+https://github.com/mun-lang/mun
+
+> First class hot-reloading
+>
+> Every aspect of Mun is designed with hot reloading in mind. Hot reloading is the process of changing code and resources of a live application, removing the need to start, stop and recompile an application whenever a function or value is changed.
+
+https://mun-lang.org/blog/2020/05/01/memory-mapping/
+
+> Whereas hot reloading of functions can be easily done in most languages (e.g. by swapping shared libraries with a fixed API), hot reloading data is more complicated because it requires information about the data layout.
+
+implicit schema migrations
 
 ### ruby
 
@@ -92,3 +112,4 @@ https://github.com/nim-lang/Nim/issues/8927
 - hot reload
 - hot reloading
 - hot module replacement (HMR)
+- memory mapping
