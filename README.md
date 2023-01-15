@@ -16,6 +16,14 @@ https://www.erlang.org/doc/design_principles/appup_cookbook.html#changing-intern
 >
 > In this case, simple code replacement is not sufficient. The process must explicitly transform its state using the callback function code_change before switching to the new version of the callback module. Thus, synchronized code replacement is used.
 
+https://news.ycombinator.com/item?id=10669131
+
+https://learnyousomeerlang.com/relups
+
+#### elixir
+
+https://kennyballou.com/blog/2016/12/elixir-hot-swapping/index.html
+
 ### clojure
 
 ### common lisp
@@ -36,6 +44,8 @@ http://soft.vub.ac.be/Publications/2002/vub-prog-tr-02-25.pdf
 ### lively
 
 https://lively-next.org/
+
+### ruby
 
 ### rust
 
