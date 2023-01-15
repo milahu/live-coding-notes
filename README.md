@@ -36,7 +36,7 @@ https://kennyballou.com/blog/2016/12/elixir-hot-swapping/index.html
 
 https://news.ycombinator.com/item?id=32362836
 
-> Common Lisp. You can redefine any class while your system is running, and you can customize how the data from old instances is updated to be used by new instances. This is part of the Metaobject Protocol, where the language calls functions and methods that are part of your program in order to implement many of its features.
+> Common Lisp. You can redefine any class while your system is running, and you can customize how the data from old instances is updated to be used by new instances. This is part of the [Metaobject Protocol](https://en.wikipedia.org/wiki/Metaobject#Metaobject_protocol), where the language calls functions and methods that are part of your program in order to implement many of its features.
 
 ### smalltalk
 
