@@ -6,6 +6,10 @@ reloading pure functions with constant data layout is simple
 
 the hard part are changes in data layout (schema migrations)
 
+https://www.reddit.com/r/Racket/comments/3as1bd/comment/cshobj3/
+
+> Better support for live code upgrade is an active research area. I don't know of any language or system that gets it 100% right, because the interactions between macros, long-lived state, data formats, interfaces, protocols and code are so many and so complex.
+
 ## criteria
 
 - "explicit" schema migrations or "implicit" schema migrations
@@ -30,13 +34,39 @@ https://learnyousomeerlang.com/relups
 
 https://kennyballou.com/blog/2016/12/elixir-hot-swapping/index.html
 
-### clojure
+### lisp
 
-### common lisp
+#### common lisp
 
 https://news.ycombinator.com/item?id=32362836
 
 > Common Lisp. You can redefine any class while your system is running, and you can customize how the data from old instances is updated to be used by new instances. This is part of the [Metaobject Protocol](https://en.wikipedia.org/wiki/Metaobject#Metaobject_protocol), where the language calls functions and methods that are part of your program in order to implement many of its features.
+
+https://lisp-journey.gitlab.io/blog/i-realized-that-to-live-reload-my-web-app-is-easy-and-convenient/
+
+https://lispcookbook.github.io/cl-cookbook/web.html
+
+https://github.com/vindarel/demo-web-live-reload
+
+https://www.reddit.com/r/Racket/comments/3as1bd/comment/cshobj3/
+
+> In Common Lisp, you can modify almost everything about the program after it starts running: You can redefine functions, macros, variables and in some implementations even constants, you can create new packages, delete existing packages, (load) new source files or FASL binaries (which can contain definitions that replace pre-existing ones in the running program) download and install new libraries via QuickLisp and then use them, etc.
+
+#### clojure
+
+#### racket
+
+https://www.reddit.com/r/Racket/comments/3as1bd/hot_swapping_code/
+
+> Some of this stuff works in certain circumstances in Racket, but Racket defaults to acting like a statically-compiled language in the tradition of Java, C++, and Pascal. "Requiring" a module in Racket is a lot like "linking" a library in C++/Pascal or "importing" a package in Java, and it's very unlike loading a file in Common Lisp.
+>
+> dynamic-require is somewhat like using dlopen or LoadLibrary, except the latter two are better documented. Using dynamic-require is not easy like the Common Lisp equivalent, and it has limitations that you wouldn't run into in Common Lisp.
+
+#### scheme
+
+> the R5RS standard doesn't require there to be any way to modify the program while it's running. For example, (eval '(define (foo) 'bar) (interaction-environment)) doesn't have to work. Even the load procedure is optional. So I'd say that hotpatching is not supported by the R5RS standard. However, some specific Scheme implementations are just as hotpatchable as CL.
+
+#### guile
 
 ### smalltalk
 
@@ -113,3 +143,5 @@ https://github.com/nim-lang/Nim/issues/8927
 - hot reloading
 - hot module replacement (HMR)
 - memory mapping
+- hotpatching, hot patching
+
