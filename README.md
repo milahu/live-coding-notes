@@ -141,6 +141,8 @@ I’m not familiar with other tools.
 
 https://github.com/chr15m/awesome-clojure-likes
 
+https://github.com/babashka/babashka
+
 https://github.com/jank-lang/jank A Clojure dialect on LLVM with gradual typing, a native runtime, and C++ interop
 
 #### racket
@@ -162,6 +164,8 @@ https://www.reddit.com/r/Racket/comments/3as1bd/hot_swapping_code/
 compiles to lua
 
 https://vxlabs.com/2018/05/18/interactive-programming-with-fennel-lua-lisp-emacs-and-lisp-game-jam-winner-exo_encounter-667/
+
+https://github.com/Olical/conjure/wiki/Quick-start:-Fennel-(stdio)
 
 ### smalltalk
 
@@ -220,6 +224,8 @@ https://github.com/irh/rust-hot-reloading
 
 https://depth-first.com/articles/2020/09/21/interactive-rust-in-a-repl-and-jupyter-notebook-with-evcxr/
 
+https://github.com/Olical/conjure/wiki/Quick-start:-Rust-(evcxr)
+
 ### zig
 
 https://github.com/ziglang/zig/issues/68
@@ -246,6 +252,8 @@ https://www.reddit.com/r/cpp/comments/wgidjl/hscpp_an_experimental_library_to_ho
 - On repl-driven programming
   - https://mikelevins.github.io/posts/2020-12-18-repl-driven/
   - https://news.ycombinator.com/item?id=31277149
+- https://oli.me.uk/conversational-software-development/
+- https://github.com/Olical/conjure - Conversational software development for Neovim. languages: Clojure, Fennel, Janet, Racket, Hy, Scheme, Guile, Common Lisp, Julia, Rust, Lua, Python
 
 ## keywords
 
