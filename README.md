@@ -139,6 +139,10 @@ I’m not familiar with other tools.
 
 #### clojure
 
+https://github.com/chr15m/awesome-clojure-likes
+
+https://github.com/jank-lang/jank A Clojure dialect on LLVM with gradual typing, a native runtime, and C++ interop
+
 #### racket
 
 https://www.reddit.com/r/Racket/comments/3as1bd/hot_swapping_code/
@@ -152,6 +156,12 @@ https://www.reddit.com/r/Racket/comments/3as1bd/hot_swapping_code/
 > the R5RS standard doesn't require there to be any way to modify the program while it's running. For example, (eval '(define (foo) 'bar) (interaction-environment)) doesn't have to work. Even the load procedure is optional. So I'd say that hotpatching is not supported by the R5RS standard. However, some specific Scheme implementations are just as hotpatchable as CL.
 
 #### guile
+
+#### fennel
+
+compiles to lua
+
+https://vxlabs.com/2018/05/18/interactive-programming-with-fennel-lua-lisp-emacs-and-lisp-game-jam-winner-exo_encounter-667/
 
 ### smalltalk
 
@@ -208,6 +218,8 @@ https://news.ycombinator.com/item?id=32362836
 
 https://github.com/irh/rust-hot-reloading
 
+https://depth-first.com/articles/2020/09/21/interactive-rust-in-a-repl-and-jupyter-notebook-with-evcxr/
+
 ### zig
 
 https://github.com/ziglang/zig/issues/68
@@ -228,6 +240,13 @@ https://www.reddit.com/r/cpp/comments/wgidjl/hscpp_an_experimental_library_to_ho
 
 > Does C++ hot-reload in 2022 allow you to make layout changes? I feel that's one of the big advantages to the DLL approach, as making data changes is extremely common when doing game scripting.
 
+## see also
+
+- https://en.wikipedia.org/wiki/Interactive_programming
+- On repl-driven programming
+  - https://mikelevins.github.io/posts/2020-12-18-repl-driven/
+  - https://news.ycombinator.com/item?id=31277149
+
 ## keywords
 
 - hot reload
@@ -235,4 +254,5 @@ https://www.reddit.com/r/cpp/comments/wgidjl/hscpp_an_experimental_library_to_ho
 - hot module replacement (HMR)
 - memory mapping
 - hotpatching, hot patching
-
+- interactive programming
+- interactive development
